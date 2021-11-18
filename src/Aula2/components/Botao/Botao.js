@@ -1,20 +1,16 @@
+import { BotaoEstilo } from "./Styles";
+
 const Botao = (props) => {
   const showMessage = () => {
     alert('clicou');
   }
 
   return (
-    <button
-      style={{
-        backgroundColor: "red",
-        color: "white",
-        width: "250px",
-        height: "80px",
-      }}
+    <BotaoEstilo
       onClick={showMessage}
     >
       {props.children}
-    </button>
+    </BotaoEstilo>
   );
 };
 
